@@ -6,7 +6,7 @@ class Subarrays {
             for (int i = 0; i < arr.length; i++) {
                 for (int j = i+1; j < arr.length; j++) {
                     for (int j2 = i; j2 < j; j2++) {
-                        System.out.print(" (" + arr[i] + " , " + arr[j2] + "),");
+                       System.out.print(" (" + arr[j2] + "),");
                     }
                       System.out.println("");
                 }
