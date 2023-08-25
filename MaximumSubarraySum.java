@@ -35,7 +35,6 @@ public class MaximumSubarraySum {
                     if(curr<0){ curr = 0;  }
                     if(curr > max) {  max = curr;}
                }
-
  System.out.println(max) ;
 
     }
