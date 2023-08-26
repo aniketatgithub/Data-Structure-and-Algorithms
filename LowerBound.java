@@ -53,13 +53,13 @@ public class LowerBound {
         int j2=0;int mid =vectorSize/2;int s =0;int end = vectorSize-1;int ans = -1;
         while( j2<vectorSize -1 ){
             mid = (s + end)/2;
-            System.out.println(" MID : " + vector.get(mid));
             if(vector.get(mid)<=target){
                 if(vector.get(mid) == target){
                     ans = vector.get(mid);
                     System.out.println("Found : " + ans );
                     System.exit(0);
                 }else{
+                    ans = vector.get(mid);
                       s = mid+1;
                 }
             }else{
