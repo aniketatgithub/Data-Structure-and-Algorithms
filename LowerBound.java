@@ -54,12 +54,11 @@ public class LowerBound {
         while( j2<vectorSize -1 ){
             mid = (s + end)/2;
             if(vector.get(mid)<=target){
+                 ans = vector.get(mid);
                 if(vector.get(mid) == target){
-                    ans = vector.get(mid);
                     System.out.println("Found : " + ans );
                     System.exit(0);
                 }else{
-                    ans = vector.get(mid);
                       s = mid+1;
                 }
             }else{
