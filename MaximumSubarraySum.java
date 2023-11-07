@@ -30,6 +30,7 @@ public class MaximumSubarraySum {
                System.out.println("Allnegative is true " + maxElement) ;
             }
             int max = 0; int curr = 0 ;
+            //kadane's Algorithm
                for (int i = 0; i < vector.size(); i++) {
                     curr = curr + vector.get(i); 
                     if(curr<0){ curr = 0;  }
