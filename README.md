@@ -1,2 +1,2 @@
-# Java-DS-Algorithms
- Java implementations of various data structure and algorithm problems to enhance coding abilities.
+# Data-Structure-and-Algorithms
+Implementations of various data structure and algorithm problems to enhance problem solving abilities.
