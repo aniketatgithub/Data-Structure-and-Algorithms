@@ -8,17 +8,13 @@
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
         dict = {}
-        for i in nums :
-            if i in dict:
-                dict[i] += 1
-            else:
-                dict[i] = 1
-
-        for key,val in dict.items() : 
-            if val > 1 : 
+        for n in nums : 
+            dict[n] = dict.get(n,0) + 1
+        for k,v in dict.items() : 
+            if(v>1):
                 return True
+
             
-        return False
         
 # @lc code=end
 

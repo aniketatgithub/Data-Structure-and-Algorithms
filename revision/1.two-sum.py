@@ -66,12 +66,14 @@ class Solution:
         #     for j in range(i+1,len(nums)):
         #         if nums[i] + nums[j] == target:
         #             return [i,j]
-        dict1 = {}
-        for num,i in enumerate(nums) : 
-            diff = target - num 
-            if (diff in dict1) : 
-                return [nums.index(diff),nums.index(num)]
-            dict1[num] = num
+        index_map  = {}
+        for i,n in enumerate(nums) :
+            if target-n not in index_map  :
+                index_map [n] = i
+            else : 
+                return [index_map.get(target-n),i]
+        
+            
 
 
 
