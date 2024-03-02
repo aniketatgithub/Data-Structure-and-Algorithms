@@ -43,6 +43,20 @@
 # @lc code=start
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+        dict = {}
+        freq = [[] for i in range(len(nums) +1)]
+        for n in nums : 
+            dict[n] = 1+dict.get(n,0)
+        for n,f in dict.items():
+            freq[n].append(f)
+        res = []
+        for i in range(len(freq)-1,0,-1):
+            for n in freq[i]:
+                res.append(n)
+                if len(res) >= k :
+                    return res
+                
         
+            
 # @lc code=end
 
